@@ -4,7 +4,7 @@ on: [push]
 jobs:
   test_cuda:
     name: TestCuda
-    run-on: ubuntu-latest
+    runs-on: ubuntu-latest
     container: nvidia/cuda:10.2-cudnn7-devel-ubuntu18.04
     steps:
     - name: Run nvcc --version
